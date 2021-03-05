@@ -1,0 +1,95 @@
+<!--pages/Bind_User/Bind_User.wxml-->
+<scroll-view class="scbg" scrool-y='true' wx:if="{{team_98_temp.length == 0}}">
+  <view class="head">
+    <text class="head_txt">绑定成员</text>
+  </view>
+
+  <view class="get_info">
+    <view class="get_item">
+      <text class="get_title">请输入姓名：</text>
+      <input class="get_input" bindinput="get_name"></input>
+    </view>
+
+    <view class="get_item">
+      <text class="get_title">请输入学号：</text>
+      <input class="get_input" type="number" bindinput="get_school_id"></input>
+    </view>
+
+  </view>
+  <!--  -->
+  <view class="info" hidden="{{detail_flag === 0}}">
+    <view class="info_head">球员信息</view>
+    <view class="info_details">
+      <!-- 姓名 -->
+      <view class="info_item">
+        <view class="info_title">姓名：</view>
+        <view class="info_val">{{name}}</view>
+      </view>
+      <!-- 学号 -->
+      <view class="info_item">
+        <view class="info_title">学号：</view>
+        <view class="info_val">{{school_id}}</view>
+      </view>
+      <!-- 联系方式 -->
+      <view class="info_item">
+        <view class="info_title">联系方式：</view>
+        <view class="info_val">{{phone}}</view>
+      </view>
+      <!-- 98杯队伍 -->
+      <view class="info_item">
+        <view class="info_title">队伍：</view>
+        <view class="info_val">{{team_98}}</view>
+      </view>
+      <!-- 号码 -->
+      <view class="info_item">
+        <view class="info_title">号码：</view>
+        <view class="info_val">{{num_98}}</view>
+      </view>
+    </view>
+  </view>
+  <button bindtap="Bind" hidden="{{detail_flag === 1}}" class="btn">绑定</button>
+  <button bindtap="Send_info" hidden="{{detail_flag === 0}}" class="btn">确认</button>
+</scroll-view>
+
+<!-- 在已经绑定过的情况下出现的内容 -->
+
+<scroll-view class="scbg" scrool-y='true' wx:if="{{team_98_temp.length != 0}}">
+  <view class="head">
+    <text class="head_txt">一球成名</text>
+  </view>
+
+  <view class="info">
+    <view class="info_head">球员信息</view>
+    <view class="info_details">
+      <!-- 姓名 -->
+      <view class="info_item">
+        <view class="info_title">姓名：</view>
+        <view class="info_val">{{name}}</view>
+      </view>
+      <!-- 学号 -->
+      <view class="info_item">
+        <view class="info_title">学号：</view>
+        <view class="info_val">{{school_id}}</view>
+      </view>
+      <!-- 联系方式 -->
+      <view class="info_item">
+        <view class="info_title">联系方式：</view>
+        <view class="info_val">{{phone}}</view>
+      </view>
+      <!-- 98杯队伍 -->
+      <view class="info_item">
+        <view class="info_title">队伍：</view>
+        <view class="info_val">{{team_98}}</view>
+      </view>
+      <!-- 号码 -->
+      <view class="info_item">
+        <view class="info_title">号码：</view>
+        <view class="info_val">{{num_98}}</view>
+      </view>
+    </view>
+  </view>
+  <button bindtap="Bind" hidden="{{detail_flag === 1 || bind_flag === 0}}" class="btn">绑定</button>
+  <button bindtap="Send_info" hidden="{{detail_flag === 0 || bind_flag === 0}}" class="btn">确认</button>
+</scroll-view>
+
+<!-- <button bindtap="Bind_cloud">云绑定</button> -->

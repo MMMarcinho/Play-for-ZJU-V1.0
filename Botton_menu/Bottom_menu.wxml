@@ -1,0 +1,30 @@
+<!--pages/Botton_menu/Bottom_menu.wxml-->
+<view class='bottomrow'>
+	<view class="bottomtab" bindtap="select1"> 
+		<image class="bottomtabimage" src="{{saishi}}"></image>
+	  <view class="bottomtext">
+      <text style="color:{{bcolor1}}">绿茵场</text>
+    </view>
+  </view>
+
+	<view class="bottomtab" bindtap="select2">
+		<image class="bottomtabimage" src="{{fabuhui}}"></image>
+    <view class="bottomtext">
+      <text style="color:{{bcolor2}}">发布会</text>
+    </view>
+	</view>
+
+	<view class="bottomtab" bindtap="select3">
+		<image class="bottomtabimage" src="{{shipin}}"></image>
+    <view class="bottomtext">
+      <text style="color:{{bcolor3}}">东看台</text>
+    </view>
+	</view>
+
+	<view class="bottomtab" bindtap="select4">
+		<image class="bottomtabimage" src="{{gengduo}}"></image>
+    <view class="bottomtext">
+     <text style="color:{{bcolor4}}">更衣室</text>
+    </view>
+	</view>
+</view>

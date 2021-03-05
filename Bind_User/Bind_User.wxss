@@ -1,0 +1,138 @@
+/* pages/Bind_User/Bind_User.wxss */
+page{
+  background-color: white;
+}
+
+.scbg{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.head{
+  width: 100%;
+  height: 160rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #D1E4FF;
+  border-bottom: 10rpx solid rgb(120, 169, 209);
+  border-left: 2rpx solid rgb(120, 169, 209);
+  border-right: 2rpx solid rgb(120, 169, 209);
+  border-bottom-left-radius: 40rpx;
+  border-bottom-right-radius: 40rpx;
+}
+
+.head_txt{
+  font-size: 60rpx;
+  color: rgb(244, 244, 244);
+  font-style: italic;
+  font-weight: bold;
+}
+
+.get_info{
+  width: 100%;
+  padding-top: 50rpx;
+  padding-bottom: 50rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.get_item{
+  width: 90%;
+  height: 60rpx;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.get_title{
+  width: 200rpx;
+  height: 90%;
+  margin-left: 20rpx;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32rpx;
+  color: rgb(128, 128, 128);
+}
+
+.get_input{
+  width: 400rpx;
+  height: 90%;
+  margin-left: 20rpx;
+  border-bottom: 1rpx solid rgb(61, 61, 61);
+  font-size: 35rpx;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.info{
+  width: 100%;
+  height: 700rpx;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(250, 250, 250);
+}
+
+.info_head{
+  width: 100%;
+  height: 80rpx;
+  font-weight: bold;
+  font-size: 45rpx;
+  color: rgb(120, 169, 209);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info_detail{
+  width: 80%;
+  height: 500rpx;
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info_item{
+  width: 90%;
+  height: 80rpx;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.info_title{
+  width: 160rpx;
+  font-size: 28rpx;
+  font-weight: lighter;
+  display: flex;
+  flex-direction: row-reverse;
+  color: #808080;
+}
+
+.info_val{
+  width: 360rpx;
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  color: #808080;
+}
+
+.btn{
+  width: 40%;
+}

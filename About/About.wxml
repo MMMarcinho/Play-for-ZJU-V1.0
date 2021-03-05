@@ -1,0 +1,85 @@
+<!--pages/About/About.wxml-->
+<scroll-view class="scbg" scrool-y='true'>
+	<view class="img">
+		<image src="/images/MainIcon.png" class="imag"></image>
+		<text class="title">踢在浙大</text>
+		<text class="stitle">1.4.0</text>
+	</view>
+
+	<view class="intr">
+		<text decode="{{true}}" class="inttext">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;踢在浙大是一款由 "AE86工作室" 开发的专门适用于浙江大学学生足球协会组织的赛事和相关活动新闻的小程序。</text>
+	</view>
+
+	<view class="team">
+		<text class="title">团队介绍</text>
+		<!-- 产品经理 -->
+		<view class="p">
+			<view class="pp">
+				<view class="h">
+					<image src="/images/IAM.jpg" class="head"></image>
+					<text class="name">Marco</text>
+				</view>
+				<view class="two">
+					<text class="role">产品经理</text>
+					<text class="main">一位挣扎在ddl面前的菜鸟，左边是日常工作状态</text>
+				</view>
+			</view>
+		</view>
+		<!-- UI设计 -->
+		<view class="p">
+			<view class="pp">
+				<view class="h">
+					<image src="/images/wb.jpg" class="head"></image>
+					<text class="name">AYIYA</text>
+				</view>
+				<view class="two">
+					<text class="role">UI工程师</text>
+					<text class="main">基本上都不是一个人在干活，You Will Never Work Alone</text>
+				</view>
+			</view>
+		</view>
+		<!-- 前端 -->
+		<view class="p">
+			<view class="pp">
+				<view class="h">
+					<image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1590944754749&di=a9c6cedf1a58a1686d24e5ec81a62e39&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20200106%2F921e967d09d84366b5fb5bc85ab5bd8c.jpeg" class="head"></image>
+					<text class="name">cluo7</text>
+				</view>
+				<view class="two">
+					<text class="role">前端工程师</text>
+					<text class="main">抄是不可能抄的，一辈子都不可能抄的，组件又不会用，就是随便写点，才可以完工了</text>
+				</view>
+			</view>
+		</view>
+		<!-- 后端 -->
+		<view class="p">
+			<view class="pp">
+				<view class="h">
+					<image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1574351174,3528063100&fm=26&gp=0.jpg" class="head"></image>
+					<text class="name">秃哥</text>
+				</view>
+				<view class="two">
+					<text class="role">后端工程师</text>
+					<text class="main">凌晨两点才能进入工作状态，宇宙无敌第一爆肝王，肝天肝地肝神仙</text>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="team2">
+		<text class="title2">致谢</text>
+		<view class='text-content'>
+			<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+				<view>作为一个菜鸟团队，踢在浙大的开发离不开各位的贡献，小程序借助了很多朋友的帮助</view>
+				<view class='margin-top-sm'>小程序的图标大多数来源：www.flaticon.com，作者为：Freepik等</view>
+				<view class='margin-top-sm'>小程序也使用了一些开源的组件，主要包括：ColorUI、Vant Weapp</view>
+				<view class='margin-top-sm'>同时因为小程序的特殊性，所以邀请了很多同学进行测试，所以要感谢以下同学：阿仪、体验官周周、伟大的潘指导、fz的老朋友lty、崴哥、阿超、阿胞、阿迷、兽指导、张宇轩、陈芷、陈孝炀、朱浩林、九妹等。</view>
+				<view class='margin-top-sm'>此处特别感谢@浙江大学学生足球协会 对于小程序逻辑设计的帮助，以及@阿仪 、@伟大的潘指导对于UI设计的帮助，蟹蟹你们。</view>
+				<view class='margin-top-sm'>更多功能敬请期待哦~(´▽`ʃ♡ƪ)</view>
+				<view class='margin-top-sm'>联系邮箱：3180103523@zju.edu.cn</view>
+			</view>
+		</view>
+	</view>
+
+</scroll-view>
+
+<!-- <include src="/pages/Botton_menu/Bottom_menu.wxml" /> -->

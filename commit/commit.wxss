@@ -1,0 +1,126 @@
+/* pages/commit/commit.wxss */
+@import "/pages/Botton_menu/Bottom_menu.wxss";
+
+page{
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(rgb(168, 203, 165)), to(rgb(188, 239, 227)));
+}
+
+.scbg {
+  width: 100%;
+  height: 100%; 
+  left: 0rpx;
+  right: 0rpx;
+  top: 0rpx;
+  padding-bottom: 100rpx;
+}
+ 
+.textarea{
+  width:700rpx;
+  margin-left: 25rpx;
+  margin-top: 25rpx;
+  border-radius: 20rpx;
+  background-color: rgba(255, 255, 255, 0.717);
+}
+
+.textinput{
+  width: 675rpx;
+  height: 680rpx;
+  margin-left: 25rpx;
+  margin-right: 25rpx;
+  padding-top: 20rpx;
+  font-size: 38rpx;
+}
+
+.click{
+  width: 84%;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 20rpx;
+  margin: auto;
+  margin-top: 100rpx;
+  margin-left: 8%;
+  margin-right: 8%;
+  background-color: rgb(195, 236, 229);
+  border-right: 7rpx solid rgb(174, 210, 204);
+  border-bottom: 7rpx solid rgb(174, 210, 204);
+  text-align: center;
+  color:white;
+  font-size:36rpx;
+
+}
+
+.title{
+  width: 100%;
+  height: 120rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 1rpx solid rgb(255, 255, 255);
+}
+
+.titletext{
+  font-size: 50rpx;
+  font-weight: bold;
+  color: white;
+}
+
+.select_box{
+  background: rgba(255, 255, 255, 0.484);
+  width: 400rpx;
+  margin-left: 175rpx;
+  position: relative;
+ }
+ .select{
+  box-sizing: border-box;
+  width: 100%;
+  height: 70rpx;
+  border:1px solid rgba(255, 255, 255, 0.484);
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+ }
+ .select_text{
+  font-size: 30rpx;
+  flex: 1;
+  color: rgb(100, 212, 186);
+ }
+ .select_img{
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  transition:transform 0.3s;
+ }
+ .select_img_rotate{
+  transform:rotate(180deg); 
+ }
+ .option_box{
+  position: absolute;
+  top: 70rpx;
+  width: 100%;
+  border:1px solid rgba(255, 255, 255, 0.484);
+  box-sizing: border-box;
+  height: 0;
+  overflow-y: auto;
+  border-top: 0;
+  background: rgba(255, 255, 255, 0.484);
+  transition: height 0.3s;
+ }
+ .option{
+  display: block;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.484);
+  padding: 10rpx;
+  color: rgb(100, 212, 186);
+ }
+
+ .zhongjian{
+   margin-top: 20rpx;
+   font-size: 25rpx;
+   font-weight: lighter;
+   color: rgb(255, 255, 255);
+   text-align: center;
+   margin-bottom: -20rpx;
+ }

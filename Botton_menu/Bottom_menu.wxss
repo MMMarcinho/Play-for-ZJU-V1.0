@@ -1,0 +1,35 @@
+/* pages/Botton_menu/Bottom_menu.wxss */
+.bottomrow{ 
+  background-color: rgb(244, 244, 255);
+  width: 100%;
+  height: 9%;
+  bottom: 0rpx;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottomtab{
+  width: 166rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottomtabimage{
+  margin-top: 10rpx;
+  width: 55rpx;
+  height: 55rpx;
+}
+
+.bottomtext{
+  font-size: 18rpx;
+  font-weight: bold;
+  color: rgb(13,65,140);
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rpx;
+}

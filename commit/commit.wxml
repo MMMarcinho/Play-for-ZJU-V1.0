@@ -1,0 +1,32 @@
+<!--pages/commit/commit.wxml-->
+<scroll-view class="scbg" scrool-y='true'>
+<view class="title">
+	<view class="titletext">召开我的发布会</view>
+</view>
+
+<view class='textarea'>
+	<textarea placeholder="咳咳~大家静一静，我来简单讲两句" placeholder-style="color:#888888; font-size:38rpx;" class='textinput' maxlength='200' bindinput="bindTextAreaBlur"></textarea>
+</view>
+
+ <view class="zhongjian">
+	<text>请选择你的发布会类型：</text>
+</view> 
+
+ <view class='select_box'>
+	<view class='select' catchtap='selectTap'>
+		<text class='select_text'>{{selectData[index]}}</text>
+		<image class='select_img {{show&&"select_img_rotate"}}' src='/images/icons/ball.png'></image>
+	</view>
+	<view class='option_box' style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
+		<text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' data-type='{{selectData[index]}}' catchtap='optionTap'>{{item}}</text>
+	</view>
+</view>
+
+
+<view id='btn' class='click' bindtap="send">
+	发表我的发布会内容
+</view>
+
+</scroll-view>
+
+<!-- <include src="/pages/Botton_menu/Bottom_menu.wxml" /> -->
