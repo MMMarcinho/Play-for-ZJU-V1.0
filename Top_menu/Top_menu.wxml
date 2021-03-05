@@ -1,0 +1,33 @@
+<view class='toprow'>
+	<view class="toptab" bindtap="gamee1">
+		<text class="toptabtext" style="color:{{color0}}">新生杯</text>
+	</view>
+	<view class="toptab" bindtap="gamee2">
+		<text class="toptabtext" style="color:{{color98}}">CC98杯</text>
+	</view>
+	<view class="toptab" bindtap="gamee3">
+		<text class="toptabtext" style="color:{{color5}}">五人制杯</text>
+	</view>
+	<view class="toptab" bindtap="gamee4">
+		<text class="toptabtext" style="color:{{color3}}">三好杯</text>
+	</view>
+</view>
+
+<view class="toprow2">
+  <view class="toptab2" bindtap="game">
+    <image class="topimage" src="/images/icons/top/game.png"></image>
+		<text class="toptabtext2" style="color:{{scolor}}">赛程表</text>
+	</view>
+	<view class="toptab2" bindtap="scoreboard">
+    <image class="topimage" src="/images/icons/top/score.png"></image>
+		<text class="toptabtext2" style="color:{{jcolor}}">积分榜</text>
+	</view>
+	<view class="toptab2" bindtap="playerboard">
+    <image class="topimage" src="/images/icons/top/player.png"></image>
+		<text class="toptabtext2" style="color:{{playercolor}}">球员榜</text>
+	</view> 
+	<view class="toptab2" bindtap="teamboard">
+    <image class="topimage" src="/images/icons/top/team.png"></image>
+		<text class="toptabtext2" style="color:{{teamcolor}}">球队榜</text>
+	</view>
+</view>

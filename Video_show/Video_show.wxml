@@ -1,0 +1,44 @@
+<scroll-view class="scbg" scrool-y='true' >
+	<view class="top">
+		<view class="blue">
+			<text class="title">来看个球吧！</text>
+		</view>
+	</view>
+ 
+	<view class="firstTV">
+		<view class="TV">
+			<video src="{{pointvurl}}" class="TV2"></video>
+		</view>
+		<view class="tuijian">
+			<text class="tui">{{pointbiaoti}}</text>
+			<text class="riqi" decode="True">发布时间：{{pointtime}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;观看次数：{{pointtimes}}次</text>
+		</view>
+	</view>
+
+	<view class="other">
+		<!-- <view class="blank">
+			<text class="riqi3">———— 更多视频 ————</text>
+		</view> -->
+		<van-divider contentPosition="center" >
+  		更多视频
+		</van-divider>
+		<block wx:for="{{list}}" wx:for-item="videoname" wx:for-index="id">
+			<view class="box" bindtap="jump" style="box-shadow: 0rpx 5rpx 0rpx 5rpx rgba(219, 219, 219, 0.2);" data-index="{{videoname.vid}}">
+				<view class="pic">
+					<image class="picc" src="{{videoname.suoluetu_url1}}"></image>
+				</view>
+				<view class="jieshao">
+					<view class="timu">
+						<text>{{videoname.shipinbiaoti}}</text>
+					</view>
+					<view class="jianjie">
+						<text>{{videoname.shipinzhaiyao}}</text>
+					</view>
+				</view>
+			</view>
+		</block>
+	</view>
+
+</scroll-view>
+
+<include src="/pages/Botton_menu/Bottom_menu.wxml" />

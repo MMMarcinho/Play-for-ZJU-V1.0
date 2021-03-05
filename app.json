@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/Bind_User/Bind_User",
+    
+    "pages/Game/Game",
+    "pages/Referee/Referee",
+    "pages/Myteam/Myteam",
+    "pages/Game_manage/Game_manage",
+    "pages/Person/Person",
+    "pages/Playerboard/Playerboard",
+    "pages/About/About",
+    "pages/Scoreboard/Scoreboard",
+    "pages/Teamboard/Teamboard",
+    "pages/Video_show/Video_show",
+    "pages/Manage/Manage",
+    "pages/square/square",
+    "pages/commit/commit",
+    "pages/Create/Create",
+    "pages/Licence/Licence",
+    "pages/Control/Control",
+    "pages/TeamDetails/TeamDetails", 
+    "pages/Notice/Notice",
+    "pages/Check/Check",
+    "pages/Mydata/Mydata", 
+    "pages/enroll/enroll",  
+    "pages/select/select",
+    "pages/Botton_menu/Bottom_menu"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#D1E4FF",
+    "navigationBarTitleText": "踢在浙大",
+    "navigationBarTextStyle": "black"
+  },
+
+  "sitemapLocation": "sitemap79.json"
+}

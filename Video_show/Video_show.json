@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-divider": "/dist/divider/index"
+  },
+  "navigationBarBackgroundColor": "#D1E4FF",
+  "navigationBarTitleText": "踢在浙大",
+  "navigationBarTextStyle": "black"
+}

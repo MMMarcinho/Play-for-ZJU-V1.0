@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "van-button": "/dist/button/index",
+    "van-tag": "/dist/tag/index",
+    "van-toast": "/dist/toast/index",
+    "van-divider": "/dist/divider/index"
+  },
+  "navigationBarBackgroundColor": "#D1E4FF",
+  "navigationBarTitleText": "踢在浙大",
+  "navigationBarTextStyle": "black"
+}

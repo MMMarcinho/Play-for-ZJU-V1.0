@@ -1,0 +1,130 @@
+<scroll-view class="scbg" scrool-y='true'>
+	<view class="cu-card case" style="margin-bottom: -10rpx" wx:if="{{playerpoint == 1}}">
+		<view class="cu-item shadow">
+			<view class="image">
+				<image src="/images/New.jpg" mode="widthFix"></image>
+				<view class="cu-tag bg-blue">赛事</view>
+				<view class="cu-bar bg-shadeBottom">
+					<text class="text-cut">春风得意马蹄疾，一日看尽紫玉花</text>
+				</view>
+			</view>
+			<view class="cu-list menu-avatar">
+				<view class="cu-item" style=" background-color: rgb(224,240,255);">
+					<view class="cu-avatar round lg" style="background-image:url(http://playforzju-images.stor.sinaapp.com/gamepic/ZJUSFA.jpg);"></view>
+					<view class="content flex-sub">
+						<view class="text-grey">新生杯</view>
+						<view class="text-gray text-sm flex justify-between">
+							由浙大足协组织，面向全体新生的一项赛事
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+
+	<view class="cu-card case" style="margin-bottom: -10rpx" wx:if="{{playerpoint == 98}}">
+		<view class="cu-item shadow">
+			<view class="image">
+				<image src="/images/NightEight.jpg" mode="widthFix"></image>
+				<view class="cu-tag bg-blue">赛事</view>
+				<view class="cu-bar bg-shadeBottom">
+					<text class="text-cut">须知少时凌云志，曾许人间第一流</text>
+				</view>
+			</view>
+			<view class="cu-list menu-avatar">
+				<view class="cu-item" style=" background-color: rgb(224,240,255);">
+					<view class="cu-avatar round lg" style="background-image:url(http://playforzju-images.stor.sinaapp.com/gamepic/ZJUSFA.jpg);"></view>
+					<view class="content flex-sub">
+						<view class="text-grey">九八杯</view>
+						<view class="text-gray text-sm flex justify-between">
+							由浙大足协组织，自由组队的一项赛事
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+
+	<view class="cu-card case" style="margin-bottom: -10rpx" wx:if="{{playerpoint == 5}}">
+		<view class="cu-item shadow">
+			<view class="image">
+				<image src="/images/Five.jpg" mode="widthFix"></image>
+				<view class="cu-tag bg-blue">赛事</view>
+				<view class="cu-bar bg-shadeBottom">
+					<text class="text-cut">蹴鞠何须忌红装</text>
+				</view>
+			</view>
+			<view class="cu-list menu-avatar">
+				<view class="cu-item" style=" background-color: rgb(224,240,255);">
+					<view class="cu-avatar round lg" style="background-image:url(http://playforzju-images.stor.sinaapp.com/gamepic/ZJUSFA.jpg);"></view>
+					<view class="content flex-sub">
+						<view class="text-grey">五人制</view>
+						<view class="text-gray text-sm flex justify-between">
+							由浙大足协组织，男女生都可参赛的一项赛事
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+
+	<view class="cu-card case" style="margin-bottom: -10rpx" wx:if="{{playerpoint == 3}}">
+		<view class="cu-item shadow">
+			<view class="image">
+				<image src="/images/Three.jpg" mode="widthFix"></image>
+				<view class="cu-tag bg-blue">赛事</view>
+				<view class="cu-bar bg-shadeBottom">
+					<text class="text-cut">陌上谁家年少，足风流。</text>
+				</view>
+			</view>
+			<view class="cu-list menu-avatar">
+				<view class="cu-item" style=" background-color: rgb(224,240,255);">
+					<view class="cu-avatar round lg" style="background-image:url(http://playforzju-images.stor.sinaapp.com/gamepic/ZJUSFA.jpg);"></view>
+					<view class="content flex-sub">
+						<view class="text-grey">三好杯</view>
+						<view class="text-gray text-sm flex justify-between">
+							由学校公体部组织，最高等级的赛事
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+
+<van-divider contentPosition="center" >
+  球队列表
+</van-divider>
+
+	<block wx:for="{{team_list}}" wx:for-item="teamview" wx:for-index="id">
+		<block wx:if="{{playerpoint == teamview.team_game_type}}">
+			<view class="team" style="background: linear-gradient(to right, white,rgb(204,230,255))">
+				<view class="headandname">
+					<image class="head" src="{{teamview.team_url}}"></image>
+					<text class="name">{{teamview.team_name}}</text>
+				</view>
+				<view class="details">
+					<view class="txt">
+						<text class="txt_name">领队：{{teamview.team_leader}}</text>
+					</view>
+					<view class="txt">
+						<text class="txt_name">教练：{{teamview.team_coach}}</text>
+					</view>
+					<view class="txt">
+						<text class="txt_name">队长：{{teamview.team_captain}}</text>
+					</view>
+				</view>
+				<view class="mine">
+					<view class="yes">
+						<van-button type="default" bindtap="de" data-chooseteamid='{{teamview.team_id}}'>查看详情</van-button>
+					</view>
+				</view>
+			</view>
+		</block>
+	</block>
+
+</scroll-view>
+
+
+
+<include src="/pages/Top_menu/Top_menu.wxml" />
+<include src="/pages/Botton_menu/Bottom_menu.wxml" />

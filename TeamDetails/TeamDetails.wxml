@@ -1,0 +1,52 @@
+<scroll-view class="scbg" scrool-y='true'>
+	<block>
+		<block>
+			<view class="title{{my_team_98_color}}">
+				<view class="name">
+					<text class="teamname">{{my_team_98_name}}</text>
+					<text class="lingdui">领队：{{my_team_98_leader}}</text>
+					<text class="lingdui">教练：{{my_team_98_coach}}</text>
+					<text class="lingdui">队长：{{my_team_98_captain}}</text>
+				</view>
+				<view class="image">
+					<image class="teamicon" src="{{my_team_98_url}}"></image>
+				</view>
+			</view>
+		</block>
+	</block>
+	<view class="sitems2">
+		<text>球员列表</text>
+	</view>
+
+	<view class="playerlist">
+		<block wx:for="{{playerlist}}" wx:for-item="playerview" wx:for-index="id">
+			<block>
+				<view class="player">
+					<view class="playericon">
+						<image class="playericon1" src="http://playforzju-icon.stor.sinaapp.com/icons/Players/Mplayer.png"></image>
+					</view>
+					<view class="playername">
+						<view class="pname">
+							<text class="namep">{{playerview.user_name}}</text>
+						</view>
+						<view class="where">
+							<text>{{playerview.college}}</text>
+						</view>
+						<view class="pid">
+							<text class="idp">{{playerview.player_number}}号 - {{playerview.country}}</text>
+						</view>
+					</view>
+					<view class="playerinfo">
+						<view class="other">
+							<text>这个人很懒，什么自我介绍都没有</text>
+						</view>
+					</view>
+				</view>
+			</block>
+		</block>
+	</view>
+
+
+</scroll-view>
+
+<!-- <include src="/pages/Botton_menu/Bottom_menu.wxml" /> -->
