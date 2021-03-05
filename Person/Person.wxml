@@ -1,0 +1,85 @@
+<scroll-view class="scbg" scrool-y='true'>
+	<view class="personal">
+		<view class="head">
+			<open-data type="userAvatarUrl" class="userinfo" id="userinfo"></open-data>
+		</view>
+		<view class="name">
+			<view class="say_hai">
+				<text class="hi">你好啊！</text>
+			</view>
+			<view class="nametext">
+				<open-data type="userNickName" class="namee"></open-data>
+			</view>
+		</view>
+	</view>
+
+	<view class="tools">
+		<view class="ttab" bindtap="mydata">
+			<image class="tab" src="/images/icons/person/ziliao.png"></image>
+			<view class="tabname">
+				<text class="tabnametext">我的资料</text>
+			</view>
+		</view>
+		<view class="ttab" bindtap="mycommit">
+			<image class="tab" src="/images/icons/person/fabuhui.png"></image>
+			<view class="tabname">
+				<text class="tabnametext">我的发布会</text>
+			</view>
+		</view>
+		<view class="ttab" bindtap="myteam">
+			<image class="tab" src="/images/icons/person/more.png"></image>
+			<view class="tabname">
+				<text class="tabnametex">我的球队</text>
+			</view>
+		</view>
+	</view>
+
+	<view class="player" bindtap="player">
+		<image class="pimage" src="/images/icons/person/qiuyuan.png"></image>
+		<view class="playertext">
+			<text class="ptext">点击查看赛证</text>
+		</view>
+	</view>
+
+	<view class="player" bindtap="coach">
+		<image class="pimage" src="/images/icons/person/jiaolian.png"></image>
+		<view class="playertext">
+			<text class="ptext">点击查看教练证</text>
+		</view>
+	</view>
+
+	<view class="player" bindtap="leader">
+		<image class="pimage" src="/images/icons/person/lingdui.png"></image>
+		<view class="playertext">
+			<text class="ptext">点击查看领队证</text>
+		</view>
+	</view>
+
+	<view class="player" bindtap="Referee">
+		<image class="pimage" src="/images/icons/person/caipan.png"></image>
+		<view class="playertext">
+			<text class="ptext">点击进入裁判系统</text>
+		</view>
+	</view>
+
+	<view class="player" bindtap="manage">
+		<image class="pimage" src="/images/icons/person/guanli.png"></image>
+		<view class="playertext">
+			<text class="ptext">点击进入管理系统</text>
+		</view>
+	</view>
+
+	<view class="player" bindtap="about">
+		<image class="pimage" src="/images/handsome.png"></image>
+		<view class="playertext">
+			<text class="ptext">关于我们</text>
+		</view>
+	</view>
+
+	<view class="line">
+		<text class="dixian">大家好，我是底线</text>
+	</view>
+
+</scroll-view>
+
+<include src="/pages/Botton_menu/Bottom_menu.wxml" />

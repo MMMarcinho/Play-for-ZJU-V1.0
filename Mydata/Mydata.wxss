@@ -1,0 +1,211 @@
+@import "/pages/Botton_menu/Bottom_menu.wxss";
+
+.scbg {
+  background-color: rgb(243, 243, 243);
+  width: 100%;
+  height: 88%;
+  left: 0rpx;
+  right: 0rpx;
+  top: 0rpx;
+  padding-bottom: 110rpx;
+}
+
+.title{
+  width: 100%;
+  height: 80rpx;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1rpx solid rgb(180,180,180);
+  flex-direction: row;
+  display: flex;
+}
+
+.titletext{
+  text-align: center;
+  color: rgb(129, 188, 255);
+  font-size: 50rpx;
+  font-weight: bold;
+}
+
+.back{
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  height: 80rpx;
+  width: 80rpx;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.save{
+  margin-left: 170rpx;
+  margin-top: 20rpx;
+  height: 80rpx;
+  width: 80rpx;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.head_and_name{
+  width: 730rpx;
+  height: 360rpx;
+  background-color: white;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  margin-right: 10prx;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 5rpx solid rgb(180,180,180);
+  border-right: 5rpx solid rgb(180,180,180);
+}
+
+.myhead{
+  width: 266rpx;
+  height: 266rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 10rpx;
+  margin-top: 30rpx;
+}
+
+
+.myname{
+  width: 460rpx;
+  height: 270rpx;
+  margin-left: 40rpx;
+  margin-top: 10rpx;
+  font-size: 40rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.nickname{
+  color: rgb(98, 98, 98);
+  font-size: 35rpx;
+  font-weight: lighter;
+}
+
+.myname2{
+  margin-top: 30rpx;
+  height: 140rpx;
+}
+
+.textinput{
+  width: 380rpx;
+  height: 106rpx;
+  margin-top: 20rpx;
+  font-size: 45rpx;
+  border-bottom: 1rpx solid rgb(180,180,180);
+}
+
+.schoolinfo{
+  width: 730rpx;
+  padding-bottom: 40rpx;
+  margin-top: 20rpx;
+  margin-left: 10rpx;
+  margin-right: 10prx;
+  background-color: white;
+  border-bottom: 5rpx solid rgb(180,180,180);
+  border-right: 5rpx solid rgb(180,180,180);
+}
+
+.item{
+  width: 680rpx;
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+}
+
+.iteminput{
+  width: 700rpx;
+  height: 48rpx;
+  margin-top: 20rpx;
+  font-size: 40rpx;
+  border-bottom: 1rpx solid rgb(180,180,180);
+}
+
+.upimage{
+  width: 730rpx;
+  height: 150rpx;
+  margin-top: 20rpx;
+  margin-left: 10rpx;
+  margin-right: 10prx;
+  background-color: white;
+  border-bottom: 5rpx solid rgb(180,180,180);
+  border-right: 2rpx solid rgb(180,180,180);
+  display: flex;
+  flex-direction: row;
+}
+
+.imageitem{
+  width: 365rpx;
+  height: 150rpx;
+  border-right: 3rpx solid rgb(180,180,180);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemicon{
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.icontext{
+  margin-top: 20rpx;
+  color: rgb(98，98，98);
+  font-weight: lighter;
+  font-size: 20rpx;
+}
+
+.tab{
+  width: 730rpx;
+  height: 150rpx;
+  margin-top: 20rpx;
+  margin-left: 10rpx;
+  margin-right: 10prx;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 5rpx solid rgb(180,180,180);
+  border-right: 4rpx solid rgb(180,180,180);
+}
+
+.mintab{
+  width: 182.5rpx;
+  height: 130rpx;
+  margin-top: 10rpx;
+  border-right: 1rpx solid rgb(180,180,180);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.minicon{
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.mintext{
+  margin-top: 5rpx;
+  font-size: 25rpx;
+  font-weight: lighter;
+}
+
+
+.line{
+  width: 100%;
+  height: 50rpx;
+  margin-top: 100rpx;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.dixian{
+  color: rgb(156, 156, 156);
+  font-size: 20rpx;
+}

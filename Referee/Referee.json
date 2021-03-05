@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "Select": "/pages/select/select",
+    "van-dialog": "/dist/dialog/index"
+  },
+  "navigationBarBackgroundColor": "#C0EC8A",
+  "navigationBarTitleText": "踢在浙大",
+  "navigationBarTextStyle": "black",
+  "backgroundTextStyle": "dark"
+}

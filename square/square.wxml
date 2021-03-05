@@ -1,0 +1,98 @@
+<!--pages/square/square.wxml-->
+<scroll-view class='scbg' scroll-y='true'>
+<!-- closeable 模式，在右侧显示关闭按钮 -->
+<van-notice-bar
+  mode="closeable"
+  text="浙江大学学生足球协会小程序踢在浙大正式发布，一起聊球看球玩球吧！"
+/>
+	<view class="topnews">
+		<view class="littletitle">
+			<text class="name">足协活动：</text>
+		</view>
+		<view class="toppic">
+			<image class="pic" src="/images/playforzju.png"></image>
+			<!-- https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588165027030&di=5a94ecbcf0757c10aa46d042eef79257&imgtype=0&src=http%3A%2F%2Fwww.winning11cn.com%2Fuploads%2F160902%2F8-160Z2211G5T0.jpg -->
+		</view>
+		<view class="toptitle">
+			<text class="title">终于等到你，还好我没放弃，踢在浙大微信小程序现在上线！！</text>
+		</view>
+	</view>
+<!-- 	<view class="title2">
+		<text class="tt">————浙大足球圈新闻发布会————</text>
+	</view> -->
+	<van-divider contentPosition="center" customStyle="color: white; border-color: white; font-size: 28rpx;">
+  	浙大足球圈新闻发布会
+	</van-divider>
+
+<!-- 赛事发布会 -->
+	<block wx:for="{{news}}" wx:for-item="news" wx:for-index="id">
+	<view class='box'>
+		<view class='firstblock'>
+			<image class='touxiang' src='{{news.news_img}}'></image>
+			<view class='person'>
+				<view class='name'><text class='showname'>{{news.news_type}}</text></view>
+				<view class='time'><text class='showtime'>发布会新闻官：{{news.news_man}}</text></view>
+			</view>
+		</view>
+		<view class='secondblock'>
+			<text class='content' decode="true">{{news.news_content}}</text>
+		</view>
+		<view class='thirdblock'>
+				<text class="ttt">发布会时间：{{news.news_time}}</text>
+		</view>
+	</view>
+	</block>
+	
+
+
+<!-- 球队发布会 -->
+<!-- 	<view class='box'>
+		<view class='firstblock'>
+			<image class='touxiang' src='/images/icons/cp/change.png'></image>
+			<view class='person'>
+				<view class='name'><text class='showname'>球队球员发布会</text></view>
+				<view class='time'><text class='showtime'>最近更新：2020-4-16 21:42</text></view>
+			</view>
+		</view>
+		<view class='secondblock'>
+			<view class="time1">
+				2020-4-16 21:42
+			</view>
+			<text class='content'>由于新冠疫情影响，本学期五人制赛事即将取消，众多春季毕业球星迎来最落寞、最特殊的离别。</text>
+		</view>
+		<view class='thirdblock'>
+			<image class='like' src='/images/icons/like/like.png'></image>
+			<text class='num'>99</text>
+			<view class="pinglun">
+				<image class="picc" src="/images/icons/like/029-football-1.png"></image>
+			</view>
+		</view>
+	</view>
+
+
+	<view class='box'>
+		<view class='firstblock'>
+			<image class='touxiang' src='/images/icons/person/019-calendar.png'></image>
+			<view class='person'>
+				<view class='name'><text class='showname'>其他新闻发布会</text></view>
+				<view class='time'><text class='showtime'>最近更新：2020-4-6 20:08</text></view>
+			</view>
+		</view>
+		<view class='secondblock'>
+			<view class="time1">
+				2020-4-6 20:08
+			</view>
+			<text class='content'>浙大足协小程序破土动工，由AE86工作室承担，预计将在五月底六月初完成。</text>
+		</view>
+		<view class='thirdblock'>
+			<image class='like' src='/images/icons/like/like.png'></image>
+			<text class='num'>99</text>
+			<view class="pinglun">
+				<image class="picc" src="/images/icons/like/029-football-1.png"></image>
+			</view>
+		</view>
+	</view> -->
+
+</scroll-view>
+
+<include src="/pages/Botton_menu/Bottom_menu" />

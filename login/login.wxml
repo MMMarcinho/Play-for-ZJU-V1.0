@@ -1,0 +1,23 @@
+<!--pages/login/login.wxml-->
+<view class='background'>
+	<view class="head">
+		<open-data type="userAvatarUrl" class="headpic"></open-data>
+	</view>
+	<view class="card">
+		<view class='First'>
+			<input id='name' placeholder="账号（手机号）" placeholder-class="plas" class='inputs' type="text" bindinput="usernameInput"></input>
+		</view>
+
+		<view class='Second'>
+			<input id='password' placeholder="登录密码" placeholder-class="plas" class='inputs' type="password" bindinput="passwordInput"></input>
+		</view>
+
+		<button id='btn' class='click2' bindgetuserinfo='regist' open-type="getUserInfo" type='primary'>登录</button>
+		<button id='btn' class='click2' bindgetuserinfo='Login_in' open-type='getUserInfo' type='primary'>一键登录</button>
+
+		<view class='cha'>
+			<text class='no'>一键登录会为新用户创建账号哦~</text>
+		</view>
+
+	</view>
+</view>

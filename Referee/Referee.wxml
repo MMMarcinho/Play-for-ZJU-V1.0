@@ -1,0 +1,163 @@
+<scroll-view class="scbg" scrool-y='true'>
+
+	<!-- <van-popup show="{{ show1 }}" bind:close="onClose" position="left" custom-style="height:100%; width: 38%;" bind:close="onClose">
+		<view class="choosetitle">主队进球球员</view>
+		<view class="chooseimg">
+			<block wx:for="{{p1_list}}" wx:for-item="player1" wx:for-index="id">
+				<view class="rightplayer" data-index="{{player1.id}}" bindtap="changecap">
+					<text>{{player1.id}}-{{player1.name}}</text>
+				</view>
+			</block>
+			<button bindtap="capsave">保存</button>
+		</view>
+	</van-popup>
+
+	<van-popup show="{{ show2 }}" bind:close="onClose" position="right" custom-style="height:100%; width: 38%;" bind:close="onClose">
+		<view class="choosetitle">客队进球球员</view>
+		<view class="chooseimg">
+			<block wx:for="{{p2_list}}" wx:for-item="player2" wx:for-index="id">
+				<view class="rightplayer" data-index="{{player2.id}}" bindtap="changecap">
+					<text>{{player2.id}}-{{player2.name}}</text>
+				</view>
+			</block>
+			<button bindtap="capsave">保存</button>
+		</view>
+	</van-popup> -->
+
+	<view class="title">
+		<view class="back" bindtap="back">
+			<image class="backimage" src="http://playforzju-icon.stor.sinaapp.com/icons/cp/%E8%BF%94%E5%9B%9E.png"></image>
+			<text class="backtext">返回</text>
+		</view>
+		<text class="titletext">浙江大学裁判工具</text>
+		<view class="back2" bindtap="upload">
+			<image class="backimage" src="http://playforzju-icon.stor.sinaapp.com/icons/cp/%E5%BC%80%E5%A7%8B.png"></image>
+			<text class="backtext">上传</text>
+		</view>
+	</view>
+	<view class="pic">
+		<view class="details">
+			<view class="hi" bindtap="yuding">
+				<text class="sayhi"> Hi~ </text>
+				<text class="name">裁判员大人！ (๑•̀ㅂ•́)و✧</text>
+			</view>
+			<view class="choose">
+				<text class="cho">请选择您要执法的比赛！(功能暂时禁用)</text>
+			</view>
+
+			<view class='select_box'>
+				<view class='select' catchtap='selectTap'>
+					<text class='select_text'>{{selectData[index]}}</text>
+					<image class='select_img {{show&&"select_img_rotate"}}' src='/images/icons/ball.png'></image>
+				</view>
+				<view class='option_box' style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
+					<text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'>{{item}}</text>
+				</view>
+			</view>
+
+			<view class="clock">
+				<view class="time" bindtap="stop">
+					<text class='marright'>{{timecount}}</text>
+					<text class="tabb">暂停</text>
+				</view>
+			</view>
+
+			<view class="startbox">
+				<view class="starttab" bindtap="start">
+					<text class="tabb">开始/继续</text>
+				</view>
+				<view class="starttab2" bindtap="Reset">
+					<text class="tabb">下半场</text>
+				</view>
+				<view class="starttab2" bindtap="zero">
+					<text class="tabb">清零</text>
+				</view>
+			</view>
+			<view class="score">
+				<text class="bifen">{{zhuduibifen}} : {{keduibifen}}</text>
+			</view>
+			<view class="tab">
+				<view class="ttab" bindtap='addList'>
+					<image class="tabimage" src="http://playforzju-icon.stor.sinaapp.com/icons/cp/%E8%BF%9B%E7%90%83.png"></image>
+					<text class="tabtext">主队进球</text>
+				</view>
+				<view class="ttab" bindtap='addList2'>
+					<image class="tabimage" src="http://playforzju-icon.stor.sinaapp.com/icons/cp/%E8%BF%9B%E7%90%832.png"></image>
+					<text class="tabtext">客队进球</text>
+				</view>
+				<view class="ttab" bindtap="addListhuanren">
+					<image class="tabimage" src="http://playforzju-icon.stor.sinaapp.com/icons/cp/%E6%8D%A2%E4%BA%BA.png"></image>
+					<text class="tabtext">换人调整</text>
+				</view>
+				<view class="ttab" bindtap="addListfangui">
+					<image class="tabimage" src="http://playforzju-icon.stor.sinaapp.com/icons/cp/%E5%90%83%E7%89%8C.png"></image>
+					<text class="tabtext">犯规吃牌</text>
+				</view>
+			</view>
+		</view>
+	</view>
+
+	<view class="pic2">
+		<block wx:for="{{lists}}" wx:key="{{index}}">
+			<view class="new">
+				<view class="littletime">
+					<view class="left">
+						<text class="timee">{{lists[index]}} 分钟 </text>
+					</view>
+					<text class="timee" >{{host_team}} </text>
+				</view>
+			</view>
+			<view class="thing">
+				<input class='create-li' data-id="{{index}}" placeholder="球员姓名" bindinput='bindKeyInput'></input>
+				<text> 进球</text>
+				<button class="small2" bindtap='jinqiu'>确认</button>
+			</view>
+		</block>
+
+
+		<block wx:for="{{listss}}" wx:key="{{index}}">
+			<view class="new">
+				<view class="littletime">
+					<view class="left">
+						<text class="timee">{{listss[index]}} 分钟 </text>
+					</view>
+					<text class="timee" >{{guest_team}} </text>
+				</view>
+			</view>
+			<view class="thing">
+				<input class='create-li' data-id="{{index}}" placeholder="球员姓名" bindinput='bindKeyInput'></input>
+				<text> 进球</text>
+				<button class="small2" bindtap='jinqiu'>确认</button>
+			</view>
+		</block>
+
+
+		<block wx:for="{{lists2}}" wx:key="{{index}}">
+			<view class="new">
+				<view class="littletime">
+					<text class="timee">{{lists2[index]}} 分钟</text>
+					<Select prop-array='{{selectArray}}'></Select>
+				</view>
+			</view>
+			<view class="thing">
+				<input class='create-li2' data-id="{{index}}" placeholder="号码" bindinput='bindKeyInput'></input>
+				<text class="huanxia">换下</text>
+				<input class='create-li2' data-id="{{index}}" placeholder="号码" bindinput='bindKeyInput'></input>
+				<button bindtap="delList" class="small">删</button>
+			</view>
+		</block>
+
+		<block wx:for="{{lists3}}" wx:key="{{index}}">
+			<view class="new">
+				<view class="littletime">
+					<text class="timee">{{lists3[index]}} 分钟</text>
+					<Select prop-array='{{selectArray}}'></Select>
+				</view>
+			</view>
+			<view class="thing">
+				<input class='create-li3' data-id="{{index}}" placeholder="球员号码" bindinput='bindKeyInput'></input>
+				<button bindtap="delList3" class="small">删</button>
+			</view>
+		</block>
+	</view>
+</scroll-view>

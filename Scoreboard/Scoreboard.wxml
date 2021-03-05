@@ -1,0 +1,400 @@
+<scroll-view class="scbg" scrool-y='true'>
+	<view class="zu">
+		<!-- A组详情 -->
+		<view class="sitems2">
+			<view class="mingci">
+				<text class="wenzi2">  </text>
+			</view>
+			<view class="qiudui">
+				<text class="wenzi2">球队</text>
+			</view>
+			<view class="jinqiuu">
+				<text class="wenzi2">胜/平/负</text>
+			</view>
+			<!-- <view class="jinqiu">
+				<text class="wenzi2">进球</text>
+			</view> -->
+			<view class="jinqiu">
+				<text class="wenzi2">进/失</text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2">积分</text>
+			</view>
+		</view>
+
+		<block wx:for="{{list}}" wx:for-item="teamview" wx:for-index="id">
+			<block wx:if="{{gamepoint == teamview.gameid}}">
+				<view class="sitems">
+					<view class="mingci">
+						<text class="wenzi2">{{teamview.NO}}</text>
+					</view>
+					<view class="qiudui">
+						<text class="wenzi2">{{teamview.team_name}}</text>
+					</view>
+					<view class="jinqiuu">
+						<text class="wenzi2">{{teamview.win}}</text>
+					</view>
+					<!-- <view class="jinqiu">
+						<text class="wenzi2">{{teamview.goal}}</text>
+					</view> -->
+					<view class="jinqiu">
+						<text class="wenzi2">{{teamview.goal}}</text>
+					</view>
+					<view class="jinqiu">
+						<text class="wenzi2">{{teamview.jifen}}</text>
+					</view>
+				</view>
+			</block>
+		</block>
+
+		<!-- 球队排名的详情 -->
+		<!-- <view class="sitems">
+			<view class="mingci">
+				<text class="wenzi2">2</text>
+			</view>
+			<view class="qiudui">
+				<text class="wenzi2">布鲁菲尔德</text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2">0</text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2">0</text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2">0</text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2">0</text>
+			</view>
+		</view>
+		<view class="sitems">
+			<view class="mingci">
+				<text class="wenzi2">3</text>
+			</view>
+			<view class="qiudui">
+				<text class="wenzi2">方鸽勇夺四强</text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2">0</text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2">0</text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2">0</text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2">0</text>
+			</view>
+		</view>
+		<view class="sitems">
+			<view class="mingci">
+				<text class="wenzi2">4</text>
+			</view>
+			<view class="qiudui">
+				<text class="wenzi2">蛋清饼</text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2">0</text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2">0</text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2">0</text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2">0</text>
+			</view>
+		</view>
+	</view> -->
+
+		<!-- 	<view class="zu">
+		B组详情 
+		<view class="sitems2">
+			<view class="mingci">
+				<text class="wenzi2">B组</text>
+			</view>
+			<view class="qiudui">
+				<text class="wenzi2">球队</text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2">积分</text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2">进球</text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2">失球</text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2">净胜球</text>
+			</view>
+		</view>
+		<view class="sitems">
+			<view class="mingci">
+				<text class="wenzi2">1</text>
+			</view>
+			<view class="qiudui">
+				<text class="wenzi2"> </text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2"> </text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2"> </text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2"> </text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2"> </text>
+			</view>
+		</view>
+		<view class="sitems">
+			<view class="mingci">
+				<text class="wenzi2">2</text>
+			</view>
+			<view class="qiudui">
+				<text class="wenzi2"> </text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2"> </text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2"> </text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2"> </text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2"> </text>
+			</view>
+		</view>
+		<view class="sitems">
+			<view class="mingci">
+				<text class="wenzi2">3</text>
+			</view>
+			<view class="qiudui">
+				<text class="wenzi2"> </text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2"> </text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2"> </text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2"> </text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2"> </text>
+			</view>
+		</view>
+		<view class="sitems">
+			<view class="mingci">
+				<text class="wenzi2">4</text>
+			</view>
+			<view class="qiudui">
+				<text class="wenzi2"> </text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2"> </text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2"> </text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2"> </text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2"> </text>
+			</view>
+		</view> -->
+	</view>
+
+		<van-divider contentPosition="center" customStyle="color: #1989fa; border-color: #1989fa; font-size: 18px; margin-bottom: 0px">
+			技术分析，我们是专业的
+		</van-divider>
+
+
+		<!-- 	<view class="zu" hidden="{{dis==true}}"> -->
+		<!-- C组详情 -->
+		<!-- 		<view class="sitems2">
+			<view class="mingci">
+				<text class="wenzi2">C组</text>
+			</view>
+			<view class="qiudui">
+				<text class="wenzi2">球队</text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2">积分</text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2">进球</text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2">失球</text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2">净胜球</text>
+			</view>
+		</view>
+		<view class="sitems">
+			<view class="mingci">
+				<text class="wenzi2">1</text>
+			</view>
+			<view class="qiudui">
+				<text class="wenzi2"> </text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2"> </text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2"> </text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2"> </text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2"> </text>
+			</view>
+		</view>
+		<view class="sitems">
+			<view class="mingci">
+				<text class="wenzi2">2</text>
+			</view>
+			<view class="qiudui">
+				<text class="wenzi2"> </text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2"> </text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2"> </text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2"> </text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2"> </text>
+			</view>
+		</view>
+		<view class="sitems">
+			<view class="mingci">
+				<text class="wenzi2">3</text>
+			</view>
+			<view class="qiudui">
+				<text class="wenzi2"> </text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2"> </text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2"> </text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2"> </text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2"> </text>
+			</view>
+		</view>
+		<view class="sitems">
+			<view class="mingci">
+				<text class="wenzi2">4</text>
+			</view>
+			<view class="qiudui">
+				<text class="wenzi2"> </text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2"> </text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2"> </text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2"> </text>
+			</view>
+			<view class="jinqiu">
+				<text class="wenzi2"> </text>
+			</view>
+		</view>
+	</view>
+
+	<view class="zu" hidden="{{dis==true}}"> -->
+
+		<!-- 		<view class="cu-bar bg-white margin-top">
+			<view class="action">
+				<text class="cuIcon-title text-pink"></text> 堆叠式轮播
+			</view>
+		</view>
+
+		<view class="tower-swiper" bindtouchmove="towerMove" bindtouchstart="towerStart" bindtouchend="towerEnd">
+			<view class="tower-item {{item.zIndex==1?'none':''}}" wx:for="{{swiperList}}" wx:key style="--index:{{item.zIndex}};--left:{{item.mLeft}}">
+				<view class="swiper-item">
+					<image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+					<video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+				</view>
+			</view>
+		</view> -->
+		<view class="cu-card article }}">
+		<view class="cu-item shadow" style="background: linear-gradient(to right, white,rgb(204,230,255))">
+			<view class="title">
+				<view class="text-cut">韦斯特懂球帝：安中联和TARIM&ERTS上演进球大战，Joker FC点胜VMCar获得98杯十一人制冠军</view>
+			</view>
+			<view class="content">
+				<image src="http://playforzju-images.stor.sinaapp.com/gamepic/Nighteight/7.jpg" mode="aspectFill"></image>
+				<view class="desc">
+					<view class="text-content"> 韦斯特懂球帝：Joker FC点胜VMCar获得98杯十一人制冠军！</view>
+					<view>
+						<view class="cu-tag bg-red light sm round">98杯</view>
+						<view class="cu-tag bg-green light sm round">决赛复盘</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+
+	<view class="cu-card article }}">
+		<view class="cu-item shadow" style="background: linear-gradient(to right, white,rgb(204,230,255))">
+			<view class="title">
+				<view class="text-cut">那届属于我们的98杯不会随年华逝去，而只会在年华的飘零中常常记起。</view>
+			</view>
+			<view class="content">
+				<image src="http://playforzju-images.stor.sinaapp.com/gamepic/Nighteight/6.jpg" mode="aspectFill"></image>
+				<view class="desc">
+					<view class="text-content"> 那届属于我们的98杯不会随年华逝去，而只会在年华的飘零中常常记起。</view>
+					<view>
+						<view class="cu-tag bg-red light sm round">98杯</view>
+						<view class="cu-tag bg-green light sm round">赛后记录</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+
+	<view class="cu-card article }}">
+		<view class="cu-item shadow" style="background: linear-gradient(to right, white,rgb(204,230,255))">
+			<view class="title">
+				<view class="text-cut">【CC98杯】赛后采访篇</view>
+			</view>
+			<view class="content">
+				<image src="http://playforzju-images.stor.sinaapp.com/gamepic/Nighteight/4.jpg" mode="aspectFill"></image>
+				<view class="desc">
+					<view class="text-content"> 比赛过后，大家会有什么感受呢？</view>
+					<view>
+						<view class="cu-tag bg-red light sm round">98杯</view>
+						<view class="cu-tag bg-green light sm round">赛后采访</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+
+
+</scroll-view>
+
+<include src="/pages/Top_menu/Top_menu.wxml" />
+<include src="/pages/Botton_menu/Bottom_menu.wxml" />

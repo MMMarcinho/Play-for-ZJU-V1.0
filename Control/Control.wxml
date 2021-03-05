@@ -1,0 +1,97 @@
+<scroll-view class="scbg" scrool-y='true'>
+
+	<van-popup show="{{ show }}" bind:close="onClose" position="left" custom-style="height:100%; width: 38%;" bind:close="onClose">
+		<view class="choosetitle">请选择一个队徽</view>
+		<view class="chooseimg">
+			<block wx:for="{{iconlist}}" wx:for-item="icon" wx:for-index="id">
+				<image class="smallicon" src="{{icon.url}}" data-index="{{icon.id}}" bindtap="changeicon"></image>
+			</block>
+			<button bindtap="img_save">保存</button>
+		</view>
+	</van-popup>
+
+	<van-popup show="{{ show2 }}" bind:close="onClose" position="right" custom-style="height:100%; width: 38%;" bind:close="onClose">
+		<view class="choosetitle">请选择一个队长</view>
+		<view class="chooseimg">
+			<block wx:for="{{list}}" wx:for-item="player" wx:for-index="id">
+				<view class="rightplayer" data-index="{{player.id}}" bindtap="changecap">
+					<text>{{player.user_name}}</text>
+				</view>
+			</block>
+			<button bindtap="capsave">保存</button>
+		</view>
+	</van-popup>
+ 
+	<van-popup show="{{ show3 }}" bind:close="onClose" position="bottom" custom-style="height:38%; width: 100%;" bind:close="onClose">
+		<!-- 		<van-picker show-toolbar title="请选择号码" columns="{{ columns }}" bind:cancel="onCancel" bind:confirm="onConfirm" /> -->
+		<view class="title2">
+			<text>请选择号码</text>
+		</view>
+		<block wx:for="{{columns}}" wx:for-item="number" wx:for-index="id">
+			<view class="hao" bindtap="xuanh" data-index="{{number}}">{{number}}</view>
+		</block> 
+		<button class="btnn" bindtap="savenumber" data-index='{{player.id}}'>保存</button>
+	</van-popup>
+
+	<view class="{{color}}">
+		<view class="name">
+			<text class="teamname">{{teamname}}</text>
+			<text class="lingdui">领队：{{leadername}}</text>
+		<!-- 	<text class="lingdui">教练：{{coachname}}</text> -->
+			<text class="lingdui" bindtap="choosecap">队长：{{captainname}}</text>
+			<!-- <view class="cap" bindtap="choosecap">
+				<view class="capp">
+					<text class="cappp" bindtap="choosecap">>队长：{{captainname}}</text>
+				</view>
+			</view> -->
+		</view>
+		<view class="image">
+			<image class="teamicon" src="{{teamicon}}" bindtap="chooseicon"></image>
+		</view>
+	</view>
+
+
+	<view class="sitems2">
+		<text>球员列表</text>
+	</view>
+
+	<view class="playerlist">
+		<block wx:for="{{list}}" wx:for-item="playerview" wx:for-index="id">
+			<block>
+				<van-swipe-cell right-width="{{ 65 }}">
+					<view class="player">
+						<view class="playericon">
+							<image class="playericon1" src="http://playforzju-icon.stor.sinaapp.com/icons/Players/Mplayer.png"></image>
+						</view>
+						<view class="playername">
+							<view class="pname">
+								<text class="namep">{{playerview.user_name}}</text>
+							</view>
+							<view class="where">
+								<text>{{playerview.college}}</text>
+							</view>
+							<view class="pid" bindtap="haoma" data-index='{{playerview.id}}'>
+								<text class="idp">{{playerview.player_number}}号 - {{playerview.country}}</text>
+							</view>
+						</view>
+						<view class="playerinfo">
+							<view class="other">
+								<view class="lic">
+									<view class="att"></view>
+
+									<text class="cansai">参赛状态</text>
+								</view>
+								<!-- view <class="del">删</view> -->
+							</view>
+						</view>
+					</view>
+					<view slot="right" class="delete">删除</view>
+				</van-swipe-cell>
+			</block>
+		</block>
+	</view>
+
+
+</scroll-view>
+
+<include src="/pages/Botton_menu/Bottom_menu.wxml" />

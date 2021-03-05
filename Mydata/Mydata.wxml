@@ -1,0 +1,130 @@
+<scroll-view class="scbg" scrool-y='true'>
+
+	<view class="title">
+		<!-- <view class="back" bindtap="back">
+			<text>返回</text>
+		</view> -->
+		<text class="titletext">我的资料</text>
+		<!-- <view class="save" bindtap="save">
+			<text>保存</text>
+		</view> -->
+	</view>
+
+	<view class="head_and_name">
+		<view class="myhead">
+			<open-data type="userAvatarUrl" class="head"></open-data>
+		</view>
+		<view class="myname">
+			<text class="nickname">我的昵称：</text>
+			<open-data type="userNickName"></open-data>
+			<view class="myname2">
+				<text class="nickname">真实姓名：</text>
+				<view class="truename">
+				<!-- 	<textarea placeholder='{{moren_truename}}' placeholder-style="color:#888888; font-size:25rpx;" class='textinput' maxlength='200' bindinput="truename_input"></textarea> -->
+				<input placeholder='{{moren_truename}}' placeholder-style="color:#888888; font-size:38rpx;" class='textinput' maxlength='200' bindinput="truename_input"></input>
+				</view>
+			</view>
+		</view>
+	</view>
+
+	<view class="schoolinfo">
+		<view class="item">
+			<text class="nickname">学号：</text>
+			<!-- <textarea placeholder="{{moren_schoolid}}" placeholder-style="color:#888888; font-size:25rpx;" class='iteminput' maxlength='200' bindinput="schoolid_input"></textarea> -->
+			<input placeholder="{{moren_schoolid}}" placeholder-style="color:#888888; font-size:38rpx;" class='iteminput' maxlength='200' bindinput="schoolid_input"></input>
+		</view>
+		<view class="item">
+			<text class="nickname">姓名缩写：</text>
+			<!-- <textarea placeholder="{{moren_shortname}}" placeholder-style="color:#888888; font-size:25rpx;" class='iteminput' maxlength='200' bindinput="shortname_input"></textarea> -->
+			<input placeholder="{{moren_shortname}}" placeholder-style="color:#888888; font-size:38rpx;" class='iteminput' maxlength='200' bindinput="shortname_input"></input>
+		</view>
+		<view class="item">
+			<text class="nickname">手机号码：</text>
+			<!-- <textarea placeholder="{{moren_phonenumber}}" placeholder-style="color:#888888; font-size:25rpx;" class='iteminput' maxlength='200' bindinput="phonenumber_input"></textarea> -->
+			<input placeholder="{{moren_phonenumber}}" placeholder-style="color:#888888; font-size:38rpx;" class='iteminput' maxlength='200' bindinput="phonenumber_input"></input>
+		</view>
+		<view class="item">
+			<text class="nickname">身份证号：</text>
+			<!-- <textarea placeholder="{{moren_selfid}}" placeholder-style="color:#888888; font-size:25rpx;" class='iteminput' maxlength='200' bindinput="selfid_input"></textarea> -->
+			<input placeholder="{{moren_selfid}}" placeholder-style="color:#888888; font-size:38rpx;" class='iteminput' maxlength='200' bindinput="selfid_input"></input>
+		</view>
+		<view class="item">
+			<text class="nickname">学院：</text>
+			<!-- <textarea placeholder="{{moren_college}}" placeholder-style="color:#888888; font-size:25rpx;" class='iteminput' maxlength='200' bindinput="college_input"></textarea> -->
+			<input placeholder="{{moren_college}}" placeholder-style="color:#888888; font-size:38rpx;" class='iteminput' maxlength='200' bindinput="college_input"></input>
+		</view>
+		<view class="item">
+			<text class="nickname">国籍：</text>
+<!-- 			<textarea placeholder="{{moren_nation}}" placeholder-style="color:#888888; font-size:25rpx;" class='iteminput' maxlength='200' bindinput="nation_input"></textarea> -->
+			<input placeholder="{{moren_nation}}" placeholder-style="color:#888888; font-size:38rpx;" class='iteminput' maxlength='200' bindinput="nation_input"></input>
+		</view>
+		<view class="item">
+			<text class="nickname">性别：</text>
+			<!-- <textarea placeholder="{{moren_sex}}" placeholder-style="color:#888888; font-size:25rpx;" class='iteminput' maxlength='200' bindinput="sex_input"></textarea> -->
+			<input placeholder="{{moren_sex}}" placeholder-style="color:#888888; font-size:38rpx;" class='iteminput' maxlength='200' bindinput="sex_input"></input>
+		</view>
+		<!-- <view class="item">
+			<text class="nickname">足协教练邀请码：</text>
+			<textarea placeholder="教练申请必填，请向足协官方获取" placeholder-style="color:#888888; font-size:25rpx;" class='iteminput' maxlength='200' bindinput="bindTextAreaBlur"></textarea>
+		</view> -->
+		<!-- <view class="item">
+			<text class="nickname">足协领队邀请码：</text>
+			<textarea placeholder="领队申请必填，请向足协官方获取" placeholder-style="color:#888888; font-size:25rpx;" class='iteminput' maxlength='200' bindinput="bindTextAreaBlur"></textarea>
+		</view>
+		<view class="item">
+			<text class="nickname">足协裁判邀请码：</text>
+			<textarea placeholder="裁判申请必填，请向足协官方获取" placeholder-style="color:#888888; font-size:25rpx;" class='iteminput' maxlength='200' bindinput="bindTextAreaBlur"></textarea>
+		</view> -->
+	</view>
+
+
+	<view class="upimage">
+		<view class="imageitem" bindtap="health">
+			<image class="itemicon" src="/images/icons/person/052-first-aid-kit.png"></image>
+			<view class="icontext">
+				<text>上传健康证明</text>
+			</view>
+		</view>
+		<view class="imageitem" bindtap="school">
+			<image class="itemicon" src="/images/icons/person/019-calendar.png"></image>
+			<view class="icontext">
+				<text>上传在校证明</text>
+			</view>
+		</view>
+		<view class="imageitem" bindtap="oneinch">
+			<image class="itemicon" src="/images/icons/person/coach.png"></image>
+			<view class="icontext">
+				<text>上传一寸照</text>
+			</view>
+		</view>
+	</view>
+
+	<view class="tab">
+		<view class="mintab"  bindtap="player_apply">
+			<image class="minicon" src="/images/icons/person/qiuyuan.png"></image>
+			<view class="mintext">球员申请</view>
+		</view>
+		<view class="mintab" bindtap="coach_apply">
+			<image class="minicon" src="/images/icons/person/jiaolian.png"></image>
+			<view class="mintext">教练申请</view>
+		</view>
+		<view class="mintab" bindtap="leader_apply">
+			<image class="minicon" src="/images/icons/person/lingdui.png"></image>
+			<view class="mintext">领队申请</view>
+		</view>
+		<view class="mintab" bindtap="judge_apply">
+			<image class="minicon" src="/images/icons/person/caipan.png"></image>
+			<view class="mintext">裁判申请</view>
+		</view>
+	</view>
+
+
+
+	<view class="line">
+		<text class="dixian">————————大家好，我是底线————————</text>
+	</view>
+</scroll-view>
+
+
+
+<!-- <include src="/pages/Botton_menu/Bottom_menu" /> -->

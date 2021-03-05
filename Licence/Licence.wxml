@@ -1,0 +1,38 @@
+<scroll-view class="{{point_scbg}}" scrool-y='true'>
+	<view class="{{point_title_style}}">
+		<text class="titletext">{{point_title}}</text>
+	</view>
+	<view class="pic">
+		<view class="selfpic">
+				<open-data type="userAvatarUrl" class="userinfo" id="userinfo"></open-data>
+		</view>
+		<view class="details">
+			<view class="item">
+				<text>姓名：{{name}}</text>
+			</view>
+			<view class="item">
+				<text>学号：{{study_number}}</text>
+			</view>
+			<view class="item">
+				<text>学院：{{college}}</text>
+			</view>
+		</view>
+	</view>
+
+	<view class="code">
+		<view class="time">
+			<text class="user-motto">{{time}}</text>
+		</view>
+		<view class="codepimage">
+			<image class="image" src="/images/icons/Players/allow.png"></image>
+		</view>
+		<view class="nowgame">
+			<text class="gamename">当前赛事：2020年三好杯</text>
+		</view>
+	</view>
+
+	<view class="line">
+		<text class="dixian">大家好，我是底线</text>
+	</view>
+
+</scroll-view>

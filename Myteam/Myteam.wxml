@@ -1,0 +1,21 @@
+<scroll-view class="scbg" scrool-y='true'>
+	<view class="head">
+		<text class="head_txt">2020年·我的球队</text>
+	</view>
+	<view class="team">
+		<navigator class="myteam_{{my_team_98_color}}">
+			<!-- url="/pages/TeamDetails/TeamDetails?chooseteamid={{teamview.team_id}}" -->
+			<view class="icon">
+				<image class="teamicon" src="{{my_team_98_url}}"></image>
+			</view>
+			<view class="detail">
+				<view class="teamname">
+					<text class="name">{{my_team_98_name}}</text>
+				</view>
+				<view class="gametime">
+					<text class="time">赛事标签：{{my_team_98_type}}</text>
+				</view>
+			</view>
+		</navigator>
+	</view>
+</scroll-view>

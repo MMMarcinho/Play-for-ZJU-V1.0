@@ -1,0 +1,344 @@
+<scroll-view class="scbg" scrool-y='true'>
+	<view class="game">
+		<view class="lefttab">新生杯</view>
+		<view class="centertab">98杯</view>
+		<view class="centertab">加一杯</view>
+		<view class="righttab">三好杯</view>
+	</view>
+
+	<view class="item">
+		<view class="title">裁判员比赛报告</view>
+		<view class="ref_list">
+			<view class="smallitem">ID：2333</view>
+			<view class="bifen">
+				<view class="line">
+					<view class="smallitem">主队：3</view>
+				</view>
+				<view class="line">
+					<view class="smallitem">客队：2</view>
+				</view>
+			</view>
+			<button class="itembtn">通过</button>
+			<button class="itembtn">撤销</button>
+
+		</view>
+	</view>
+
+	<view class="item">
+		<view class="title">比赛结果编辑</view>
+		<view class="ref_list2">
+			<view class="smallitem">ID：</view>
+			<input class="smallinput"></input>
+			<view class="bifen">
+				<view class="line">
+					<view class="smallitem">主队：</view>
+					<input class="smallinput"></input>
+				</view>
+				<view class="line2">
+					<view class="smallitem">客队：</view>
+					<input class="smallinput"></input>
+				</view>
+			</view>
+			<button class="itembtn">确认</button>
+		</view>
+	</view>
+
+	<view class="item3">
+		<view class="title">比赛赛程创建：</view>
+		<view class="ref_list">
+			<view class="details">
+				<view class="d">
+					<view class="t">
+						<view class="smallitem">杯赛类型：</view>
+						<input class="smallinput4" bindinput="cuptype_input"></input>
+					</view>
+				</view>
+
+				<view class="d">
+					<view class="t">
+						<view class="smallitem">轮数：</view>
+						<input class="smallinput4" bindinput="gametype_input"></input>
+					</view>
+					<view class="t">
+						<view class="smallitem">场地：</view>
+						<input class="smallinput4" bindinput="field_input"></input>
+					</view>
+				</view>
+
+				<view class="d">
+					<view class="t">
+					<view class="smallitem">主队：</view>
+					<input class="smallinput4" bindinput="hostteam_input"></input>
+				</view>
+				<view class="t">
+					<view class="smallitem">客队：</view>
+					<input class="smallinput4" bindinput="guestteam_input"></input>
+				</view>
+
+				
+				</view>
+				<!-- 
+				 -->
+
+
+				<view class="tt">
+					<input class="smallinput2" bindinput="year_input"></input>
+					<view class="smallitem">年</view>
+					<input class="smallinput2" bindinput="month_input"></input>
+					<view class="smallitem">月</view>
+					<input class="smallinput2" bindinput="day_input"></input>
+					<view class="smallitem">日</view>
+					<input class="smallinput2" bindinput="hour_input"></input>
+					<view class="smallitem">时</view>
+					<input class="smallinput2" bindinput="minute_input"></input>
+					<view class="smallitem">分</view>
+				</view>
+
+			</view>
+			<button class="itembtn" bindtap="confirm">确认</button>
+		</view>
+	</view>
+
+
+	<!-- 射手榜 -->
+	<view class="item">
+		<view class="title">射手榜登记</view>
+		<view class="shoot_list">
+			<view class="smallitem">ID：</view>
+			<input class="smallinput3"></input>
+			<view class="bifen">
+				<view class="line3">
+					<view class="smallitem">进球：</view>
+					<input class="smallinput2"></input>
+				</view>
+			</view>
+			<view class="bifen">
+				<view class="line3">
+					<view class="smallitem">点球：</view>
+					<input class="smallinput2"></input>
+				</view>
+			</view>
+			<button class="btn">确认</button>
+		</view>
+		<view class="shoot_list">
+			<view class="smallitem">ID：</view>
+			<input class="smallinput3"></input>
+			<view class="bifen">
+				<view class="line3">
+					<view class="smallitem">进球：</view>
+					<input class="smallinput2"></input>
+				</view>
+			</view>
+			<view class="bifen">
+				<view class="line3">
+					<view class="smallitem">点球：</view>
+					<input class="smallinput2"></input>
+				</view>
+			</view>
+			<button class="btn">确认</button>
+		</view>
+		<view class="shoot_list">
+			<view class="smallitem">ID：</view>
+			<input class="smallinput3"></input>
+			<view class="bifen">
+				<view class="line3">
+					<view class="smallitem">进球：</view>
+					<input class="smallinput2"></input>
+				</view>
+			</view>
+			<view class="bifen">
+				<view class="line3">
+					<view class="smallitem">点球：</view>
+					<input class="smallinput2"></input>
+				</view>
+			</view>
+			<button class="btn">确认</button>
+		</view>
+		<view class="shoot_list">
+			<view class="smallitem">ID：</view>
+			<input class="smallinput3"></input>
+			<view class="bifen">
+				<view class="line3">
+					<view class="smallitem">进球：</view>
+					<input class="smallinput2"></input>
+				</view>
+			</view>
+			<view class="bifen">
+				<view class="line3">
+					<view class="smallitem">点球：</view>
+					<input class="smallinput2"></input>
+				</view>
+			</view>
+			<button class="btn">确认</button>
+		</view>
+		<view class="shoot_list">
+			<view class="smallitem">ID：</view>
+			<input class="smallinput3"></input>
+			<view class="bifen">
+				<view class="line3">
+					<view class="smallitem">进球：</view>
+					<input class="smallinput2"></input>
+				</view>
+			</view>
+			<view class="bifen">
+				<view class="line3">
+					<view class="smallitem">点球：</view>
+					<input class="smallinput2"></input>
+				</view>
+			</view>
+			<button class="btn">确认</button>
+		</view>
+		<view class="shoot_list">
+			<view class="smallitem">ID：</view>
+			<input class="smallinput3"></input>
+			<view class="bifen">
+				<view class="line3">
+					<view class="smallitem">进球：</view>
+					<input class="smallinput2"></input>
+				</view>
+			</view>
+			<view class="bifen">
+				<view class="line3">
+					<view class="smallitem">点球：</view>
+					<input class="smallinput2"></input>
+				</view>
+			</view>
+			<button class="btn">确认</button>
+		</view>
+		<view class="shoot_list">
+			<view class="smallitem">ID：</view>
+			<input class="smallinput3"></input>
+			<view class="bifen">
+				<view class="line3">
+					<view class="smallitem">进球：</view>
+					<input class="smallinput2"></input>
+				</view>
+			</view>
+			<view class="bifen">
+				<view class="line3">
+					<view class="smallitem">点球：</view>
+					<input class="smallinput2"></input>
+				</view>
+			</view>
+			<button class="btn">确认</button>
+		</view>
+		<view class="shoot_list">
+			<view class="smallitem">ID：</view>
+			<input class="smallinput3"></input>
+			<view class="bifen">
+				<view class="line3">
+					<view class="smallitem">进球：</view>
+					<input class="smallinput2"></input>
+				</view>
+			</view>
+			<view class="bifen">
+				<view class="line3">
+					<view class="smallitem">点球：</view>
+					<input class="smallinput2"></input>
+				</view>
+			</view>
+			<button class="btn">确认</button>
+		</view>
+	</view>
+	<!-- 积分榜 -->
+	<view class="item">
+		<view class="title">积分榜登记</view>
+		<view class="ref_list2">
+			<view class="bifen">
+				<view class="line">
+					<view class="smallitem">小组：</view>
+					<input class="smallinput"></input>
+				</view>
+				<view class="line2">
+					<view class="smallitem">球队：</view>
+					<input class="smallinput"></input>
+				</view>
+			</view>
+			<view class="bifen">
+				<view class="line">
+					<view class="smallitem">进球：</view>
+					<input class="smallinput"></input>
+				</view>
+				<view class="line2">
+					<view class="smallitem">丢球：</view>
+					<input class="smallinput"></input>
+				</view>
+			</view>
+			<button class="itembtn">确认</button>
+		</view>
+		<view class="ref_list2">
+			<view class="bifen">
+				<view class="line">
+					<view class="smallitem">小组：</view>
+					<input class="smallinput"></input>
+				</view>
+				<view class="line2">
+					<view class="smallitem">球队：</view>
+					<input class="smallinput"></input>
+				</view>
+			</view>
+			<view class="bifen">
+				<view class="line">
+					<view class="smallitem">进球：</view>
+					<input class="smallinput"></input>
+				</view>
+				<view class="line2">
+					<view class="smallitem">丢球：</view>
+					<input class="smallinput"></input>
+				</view>
+			</view>
+			<button class="itembtn">确认</button>
+		</view>
+		<view class="ref_list2">
+			<view class="bifen">
+				<view class="line">
+					<view class="smallitem">小组：</view>
+					<input class="smallinput"></input>
+				</view>
+				<view class="line2">
+					<view class="smallitem">球队：</view>
+					<input class="smallinput"></input>
+				</view>
+			</view>
+			<view class="bifen">
+				<view class="line">
+					<view class="smallitem">进球：</view>
+					<input class="smallinput"></input>
+				</view>
+				<view class="line2">
+					<view class="smallitem">丢球：</view>
+					<input class="smallinput"></input>
+				</view>
+			</view>
+			<button class="itembtn">确认</button>
+		</view>
+		<view class="ref_list2">
+			<view class="bifen">
+				<view class="line">
+					<view class="smallitem">小组：</view>
+					<input class="smallinput"></input>
+				</view>
+				<view class="line2">
+					<view class="smallitem">球队：</view>
+					<input class="smallinput"></input>
+				</view>
+			</view>
+			<view class="bifen">
+				<view class="line">
+					<view class="smallitem">进球：</view>
+					<input class="smallinput"></input>
+				</view>
+				<view class="line2">
+					<view class="smallitem">丢球：</view>
+					<input class="smallinput"></input>
+				</view>
+			</view>
+			<button class="itembtn">确认</button>
+		</view>
+	</view>
+
+	<button bindtap="back">返回</button>
+
+
+
+</scroll-view>

@@ -1,0 +1,35 @@
+<!--pages/Manage/Manage.wxml-->
+<view class="head">
+	<view class="headtext">
+		<text>管理员工具</text>
+	</view>
+</view>
+
+
+
+
+<scroll-view class="scbg" scrool-y='true'>
+<van-grid column-num="2">
+  <van-grid-item icon="/images/icons/More/refresh.png" text="个人团队审核" info="99+" url="/pages/Check/Check"/>
+  <van-grid-item icon="/images/icons/More/nav.png" text="参赛申请审核" info="99+" link-type="redirectTo" url="/pages/Person/Person"/>
+</van-grid>
+<van-grid column-num="1">
+  <van-grid-item icon="/images/icons/More/honor.png" text="赛事成绩管理" dot  url="/pages/Game_manage/Game_manage"/>
+</van-grid>
+<van-grid column-num="2">
+  <van-grid-item icon="/images/icons/More/light.png" text="看球内容管理" />
+  <van-grid-item icon="/images/icons/More/words.png" text="发布会管理" info="99+" url="/pages/commit/commit"/>
+</van-grid>
+<van-grid column-num="2">
+  <van-grid-item icon="/images/icons/More/culture.png" text="官方人员指派"/>
+  <van-grid-item icon="/images/icons/More/mail.png" text="使用指南" />
+</van-grid>
+<van-grid column-num="2">
+  <van-grid-item icon="/images/icons/More/good.png" text="问题反馈" />
+  <van-grid-item icon="/images/icons/More/my.png" text="谢谢你用这个小程序" />
+</van-grid>
+<van-grid column-num="1">
+  <van-grid-item icon="home-o" text="返回" link-type="redirectTo" url="/pages/Person/Person"/>
+</van-grid>
+
+</scroll-view>

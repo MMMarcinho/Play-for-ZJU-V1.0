@@ -1,0 +1,66 @@
+<view class="items">
+	<view class="sitems2">
+		<view class="mingci">
+			<text class="wenzi2">名次</text>
+		</view>
+		<view class="mingzi">
+			<text class="wenzi2">姓名</text>
+		</view>
+		<view class="qiudui">
+			<text class="wenzi2">球队</text>
+		</view>
+		<view class="jinqiu">
+			<text class="wenzi2">进球</text>
+		</view>
+		<view class="jinqiu">
+			<text class="wenzi2">点球</text>
+		</view>
+	</view>
+</view>
+
+<scroll-view class="scbg" scrool-y='true'>
+	<block wx:for="{{list}}" wx:for-item="playerview" wx:for-index="id">
+		<block wx:if="{{playerpoint == playerview.gameid}}">
+			<view class="sitems">
+				<view class="mingci">
+					<text class="wenzi">{{playerview.No}}</text>
+				</view>
+				<view class="mingzi">
+					<text class="wenzi">{{playerview.true_name}}</text>
+				</view>
+				<view class="qiudui">
+					<text class="wenzi">{{playerview.team}}</text>
+				</view>
+				<view class="jinqiu">
+					<text class="wenzi">{{playerview.jinqiu}}</text>
+				</view>
+				<view class="jinqiu">
+					<text class="wenzi">{{playerview.dianqiu}}</text>
+				</view>
+			</view>
+
+		</block>
+	</block>
+
+	<van-divider contentPosition="center" customStyle="color: #1989fa; border-color: #1989fa; font-size: 18px; margin-bottom: 0px">
+		这是属于我们的光荣时刻
+	</van-divider>
+
+	<swiper class="card-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
+		<swiper-item wx:for="{{swiperList}}" wx:key class="{{cardCur==index?'cur':''}}">
+			<view class="swiper-item">
+				<image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+				<video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+			</view>
+		</swiper-item>
+	</swiper>
+
+
+
+
+</scroll-view>
+
+
+
+<include src="/pages/Top_menu/Top_menu.wxml" />
+<include src="/pages/Botton_menu/Bottom_menu.wxml" />

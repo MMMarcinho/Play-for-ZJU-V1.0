@@ -1,0 +1,85 @@
+<view class="choose">
+	<view class="topline">
+		<view class="{{topcolor1}}" bindtap="self">
+			球员入队申请
+		</view>
+		<view class="{{topcolor2}}" bindtap="tt">
+			参赛资格申请
+		</view>
+	</view>
+	<view class="back" bindtap="back">
+		返回
+	</view>
+</view>
+
+<scroll-view class="scbg" scrool-y='true'>
+	<view class="checkall">
+		<block wx:for="{{personalData}}" wx:for-item="checklist" wx:for-index="id">
+			
+			<block wx:if="{{checklist.checkid == checkid}}">
+				<view class="checklist1" wx:if="{{checklist.checkid == 1}}">
+					<view class="itemall">
+						<view class="longitem">
+							<text decode="{{true}}">姓名：{{checklist.name}} &nbsp;&nbsp;&nbsp;身份：{{checklist.type}}</text>
+						</view>
+						<view class="longitem">
+							<text decode="{{true}}">性别：{{checklist.sex}}&nbsp;&nbsp;&nbsp;学号：{{checklist.study_number}}</text>
+						</view>
+						<view class="longitem">
+							<text decode="{{true}}">国籍：{{checklist.country}}&nbsp;&nbsp;&nbsp;学院：{{checklist.college}}</text>
+						</view>
+						<view class="longitem">
+							<text decode="{{true}}">手机号码：{{checklist.phone}}</text>
+						</view>
+						<view class="longitem">
+							<text decode="{{true}}">身份证号：{{checklist.id_number}}</text>
+						</view>
+						<view class="look">
+							<view class="lookbutton">
+								查看在校证明
+							</view>
+							<view class="lookbutton">
+								查看健康证明
+							</view>
+						</view>
+					</view>
+					<view class="pass">
+						<button class="btn1" bindtap="pass"	data-applyer_id='{{checklist.user_id}}' data-id='{{checklist.id}}'>通过</button>
+						<button class="btn2" bindtap="reject" data-applyer_id='{{checklist.user_id}}' data-id='{{checklist.id}}'>否决</button>
+					</view>
+				</view>
+			</block>
+		</block>
+
+		<block wx:for="{{teamData}}" wx:for-item="checklist" wx:for-index="id">
+			<block wx:if="{{checklist.checkid == checkid}}">
+				<view class="checklist2" wx:if="{{checklist.checkid == 2}}">
+					<view class="itemall">
+						<view class="longitem">
+							<text decode="{{true}}">球队id：{{checklist.id}}&nbsp;&nbsp;&nbsp;领队：{{checklist.creater_name}}</text>
+						</view>
+						<view class="longitem">
+							<text decode="{{true}}">球队名：{{checklist.team_name}}</text>
+						</view>
+						<view class="longitem">
+							<text decode="{{true}}">所属单位：{{checklist.unit}}</text>
+						</view>
+						<view class="longitem">
+							<text decode="{{true}}">球衣颜色：{{checklist.shirt}}</text>
+						</view>
+						<view class="longitem">
+							<text decode="{{true}}">参加赛事：{{checklist.team_type}}</text>
+						</view>
+						<view class="longitem">
+							<text decode="{{true}}">所在位置：{{checklist.location}}</text>
+						</view>
+					</view>
+					<view class="pass">
+						<button class="btn1" bindtap="pass_team" data-id='{{checklist.id}}'>通过</button>
+						<button class="btn2" bindtap="reject_team" data-id='{{checklist.id}}'>否决</button>
+					</view>
+				</view>
+			</block>
+		</block>
+	</view>
+</scroll-view>

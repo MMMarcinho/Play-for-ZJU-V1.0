@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "Select": "/pages/select/select"
+  },
+  "navigationBarBackgroundColor": "#D1E4FF",
+  "navigationBarTitleText": "踢在浙大",
+  "navigationBarTextStyle": "black"
+}

@@ -1,0 +1,92 @@
+/* pages/enroll/enroll.wxss */
+page{
+  left: 0rpx;
+  right: 0rpx;
+  background-color: white;
+}
+
+.First{
+  width: 90%;
+  height: 100rpx;
+  margin-top: 180rpx;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #F2F2F2;
+}
+
+.plas{
+  font-size: 30rpx;
+  color:#CCCCCC;
+}
+
+.inputs{
+  line-height: 100rpx;
+  font-size: 30rpx;
+  color:#000;
+  margin:auto;
+  margin-left: 20rpx;
+  width:100%
+}
+
+.Second{
+  width: 90%;
+  height: 100rpx;
+  margin-top: 20rpx;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #F2F2F2;
+}
+
+.click{
+  width: 90%;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin:auto;
+  margin-top: 80rpx;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  color: white;
+  font-size: 33rpx;
+  background-color: rgb(0, 195, 255);
+}
+.cha{
+  width:90%;
+  height: 50rpx;
+  margin:auto;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.no{
+  color: black;
+  font-size: 28rpx;
+  margin-left: 15rpx;
+}
+
+.head{
+  width: 100%;
+  height: 250rpx;
+  display: flex;
+  justify-content: center;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(rgb(209, 228, 255)), to(rgb(0, 195, 255)));
+
+}
+
+.headpic{
+  width: 250rpx;
+  height: 250rpx;
+  margin-top: 130rpx;
+  border: 5rpx solid rgb(0, 195, 255);
+  border-radius: 50%;
+  overflow:hidden;
+}

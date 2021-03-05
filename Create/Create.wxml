@@ -1,0 +1,71 @@
+<view class="title">
+	<view class="head">
+		带上我们的梦想出发！
+	</view>
+</view>
+
+<view class="main">
+	<!-- 选择赛事 -->
+	<view class="q">
+		<view class="question">
+			请选择队伍的赛事：
+		</view>
+		<view class="re">
+			<Select prop-array='{{gameArray}}' bind:myget="cuptypeSelect"></Select>
+		</view>
+	</view>
+	<!-- 输入球队名 -->
+	<view class="q">
+		<view class="question">
+			请输入球队名：
+		</view>
+		<view class="re">
+			<input class="input" name="teamname" placeholder="请输入球队" bindinput="teamnameInput" />
+		</view>
+	</view>
+	<!-- 输入球队所在位置 -->
+	<view class="q">
+		<view class="question">
+			请输入球队所在位置：
+		</view>
+		<view class="re">
+			<input class="input" name="teamname" placeholder="请输入球队所在位置" bindinput="locationInput" />
+		</view>
+	</view>
+	<!-- 输入所属单位 -->
+	<view class="q">
+		<view class="question">
+			请输入所属单位：
+		</view>
+		<view class="re">
+			<input class="input" name="unitname" placeholder="请输入单位" bindinput="unitInput" />
+		</view>
+	</view>
+
+	<view class="q">
+		<view class="question">
+			请输入球衣颜色：
+		</view>
+		<view class="re">
+			<input class="input" name="shirtname" placeholder="请输入球衣颜色" bindinput="shirtInput" />
+		</view>
+	</view>
+
+	<view class="q">
+		<view class="question">
+			请选择球队主题色：
+		</view>
+		<view class="re">
+			<Select prop-array='{{colorArray}}' bind:myget="colorSelect"></Select>
+		</view>
+	</view>
+
+  <view class="go">
+    <view class="yes" bindtap="create">
+      <image class="yespic" src="/images/icons/person/star.png"></image>
+      创建球队
+    </view>
+  </view>
+
+
+</view>

@@ -1,0 +1,6 @@
+<!--pages/square/square.wxml-->
+<scroll-view class='scbg' scroll-y='true'>
+
+
+</scroll-view>
+

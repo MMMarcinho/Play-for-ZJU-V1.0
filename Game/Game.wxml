@@ -1,0 +1,44 @@
+<scroll-view class="scbg" scrool-y='true'>
+<!-- <van-notice-bar
+  color="#1989fa"
+  background="#87CEFA"
+  left-icon="http://playforzju-icon.stor.sinaapp.com/icons/cp/%E5%BC%80%E5%A7%8B.png"
+  text=""
+/> -->
+<!-- <van-notice-bar mode="closeable" text="踢在浙大全新升级，点击比赛底部按钮可以预约比分哦~" /> -->
+	<block wx:for="{{list_2019_fresh}}" wx:for-item="gameview" wx:for-index="id">
+		<block wx:if="{{gamepoint == gameview.type}}">
+				<view class="gamebox">
+					<view class="timeline">
+						<text class="lunshu">{{gameview.round}}</text>
+						<text class="lunshu">{{gameview.year}}-{{gameview.month}}-{{gameview.day}} {{gameview.hour}}:{{gameview.minute}}:00</text>
+						<van-tag type="primary">{{gameview.state}}</van-tag>
+					</view> 
+					<view class="details">
+						<view class="team">
+							<image class="teamimage" src="{{gameview.host_url}}"></image>
+							<text class="teamtext">{{gameview.host_team}}</text>
+						</view>
+						<view class="result" bindtap="edit" data-gameid='{{gameview.id}}' data-cup_type='{{gameview.cup_type}}' data-host_team='{{gameview.host_team}}' data-guest_team='{{gameview.guest_team}}'>
+							<text class="bifen" decode="{{true}}">{{gameview.host_score}}&nbsp;:&nbsp;{{gameview.guest_score}}</text>
+						</view>
+						<view class="team">
+							<image class="teamimage" src="{{gameview.guest_url}}"></image>
+							<text class="teamtext">{{gameview.guest_team}}</text>
+						</view>
+					</view>
+					<view class="p">
+						<text>{{gameview.position}}</text>
+					</view>
+					<!-- <view class="yue" bindtap="yuyue" data-gameid='{{gameview.id}}'>
+						<text>预约本场比赛</text>
+					</view> -->
+					<!-- <view bindtap="dingyue">
+						<text>测试订阅消息</text>
+					</view> -->
+				</view>
+		</block>
+	</block>
+</scroll-view>
+<include src="/pages/Top_menu/Top_menu.wxml" />
+<include src="/pages/Botton_menu/Bottom_menu.wxml" />
